@@ -5,14 +5,15 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Google Sans, sans-serif;
   background-color: #ffffff;
 }
 
-/* ---------------- TOP LINKS ---------------- */
+
 .top-links {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 15px;
   padding: 15px 20px;
   font-size: 13px;
@@ -20,14 +21,28 @@ body {
 
 .top-links a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .top-links a:hover {
   text-decoration: underline;
 }
 
-/* ---------------- MAIN ---------------- */
+.sign-in-btn {
+  padding: 6px 14px;
+  font-size: 13px;
+  border: 1px solid #1a73e8;
+  background-color: #1a73e8;
+  color: #fff;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sign-in-btn:hover {
+  background-color: #155ab6;
+}
+
 .main {
   text-align: center;
   margin-top: 90px;
@@ -37,17 +52,17 @@ body {
   margin: 0 auto 30px;
 }
 
-/* ---------------- SEARCH BAR ---------------- */
 .search-box {
   display: flex;
-  align-items: center;
+  align-items: center; 
+  gap: 4px;            
   width: 580px;
   max-width: 90%;
   margin: 0 auto;
   padding: 10px 14px;
   border-radius: 24px;
   border: 1px solid #dfe1e5;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .search-box:hover,
@@ -55,7 +70,10 @@ body {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
-/* Input */
+.search-icon {
+  margin-left: 8px;
+}
+
 .search-box input {
   flex: 1;
   border: none;
@@ -64,7 +82,11 @@ body {
   padding: 6px 8px;
 }
 
-/* Material Icons (Google style) */
+.voice-icon,
+.plus-icon {
+  margin-left: 6px;
+}
+
 .material-icons {
   font-size: 22px;
   color: #9aa0a6;
@@ -72,21 +94,26 @@ body {
   user-select: none;
 }
 
-.voice-icon,
-.plus-icon {
-  margin-right: 8px;
-}
-
-.search-icon {
-  margin-left: 8px;
-}
-
-/* Subtle hover like Google */
 .material-icons:hover {
   color: #202124;
 }
 
-/* ---------------- BUTTONS ---------------- */
+.ai-mode-btn {
+  padding: 5px 12px;
+  font-size: 13px;
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #202124;
+  transition: background-color 0.2s;
+  margin-left: 6px; 
+}
+
+.ai-mode-btn:hover {
+  background-color: #e8e8e8;
+}
+
 .buttons {
   margin-top: 25px;
 }
@@ -104,7 +131,6 @@ body {
   border: 1px solid #dadce0;
 }
 
-/* ---------------- LANGUAGES ---------------- */
 .languages {
   margin-top: 25px;
   font-size: 13px;
@@ -120,18 +146,18 @@ body {
   text-decoration: underline;
 }
 
-/* ---------------- FOOTER ---------------- */
 .footer {
   background-color: #f2f2f2;
   position: fixed;
-  bottom: 0;
+  bottom: 2px;
   width: 100%;
   font-size: 14px;
-  color: #70757a;
+  font-weight: regular;
+  color: #000000;
 }
 
 .footer p {
-  padding: 10px 30px;
+  padding: 14px 34px;
   border-bottom: 1px solid #dadce0;
   margin: 0;
 }
@@ -139,16 +165,21 @@ body {
 .footer-links {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 14px 34px;
   flex-wrap: wrap;
 }
 
 .footer-links a {
   margin-right: 15px;
   text-decoration: none;
-  color: #70757a;
+  color: #000000;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+.footer-links a.emoji {
+  font-size: 14px;
+  margin-right: 10px;
 }
