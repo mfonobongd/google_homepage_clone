@@ -9,6 +9,7 @@ body {
   background-color: #ffffff;
 }
 
+/* ---------------- TOP LINKS ---------------- */
 .top-links {
   display: flex;
   justify-content: flex-end;
@@ -26,6 +27,7 @@ body {
   text-decoration: underline;
 }
 
+/* ---------------- MAIN ---------------- */
 .main {
   text-align: center;
   margin-top: 90px;
@@ -35,20 +37,56 @@ body {
   margin: 0 auto 30px;
 }
 
-.search-box input {
+/* ---------------- SEARCH BAR ---------------- */
+.search-box {
+  display: flex;
+  align-items: center;
   width: 580px;
   max-width: 90%;
-  padding: 12px 20px;
-  border-radius: 25px;
+  margin: 0 auto;
+  padding: 10px 14px;
+  border-radius: 24px;
   border: 1px solid #dfe1e5;
-  font-size: 16px;
+  background-color: #fff;
+}
+
+.search-box:hover,
+.search-box:focus-within {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+/* Input */
+.search-box input {
+  flex: 1;
+  border: none;
   outline: none;
+  font-size: 16px;
+  padding: 6px 8px;
 }
 
-.search-box input:hover {
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+/* Material Icons (Google style) */
+.material-icons {
+  font-size: 22px;
+  color: #9aa0a6;
+  cursor: pointer;
+  user-select: none;
 }
 
+.voice-icon,
+.plus-icon {
+  margin-right: 8px;
+}
+
+.search-icon {
+  margin-left: 8px;
+}
+
+/* Subtle hover like Google */
+.material-icons:hover {
+  color: #202124;
+}
+
+/* ---------------- BUTTONS ---------------- */
 .buttons {
   margin-top: 25px;
 }
@@ -66,6 +104,7 @@ body {
   border: 1px solid #dadce0;
 }
 
+/* ---------------- LANGUAGES ---------------- */
 .languages {
   margin-top: 25px;
   font-size: 13px;
@@ -81,6 +120,7 @@ body {
   text-decoration: underline;
 }
 
+/* ---------------- FOOTER ---------------- */
 .footer {
   background-color: #f2f2f2;
   position: fixed;
